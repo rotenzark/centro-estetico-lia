@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <script>(function(){var r=document.documentElement;r.classList.remove('no-js');
 /* la firma: finché main.js non parte c'è la vetrina col pannello vuoto; se il codice non arriva, dopo 2,5 s il ramo fiorito */
 try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add('firma-attesa');window.__attesaPercorso=setTimeout(function(){r.classList.remove('firma-attesa')},2500)}}catch(e){}})()</script>
@@ -20,15 +21,60 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;700&amp;family=Noto+Sans+Display:wght@400;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 <script src="js/main.js?v=1" defer></script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BeautySalon","name":"Centro Estetico Lia","description":"Centro estetico e del benessere dal 1972 nel cuore di Sant'Ambrogio: percorsi su misura per viso e corpo, massaggi, riflessologia plantare, epilazione a cera, manicure e pedicure.","url":"https://rotenzark.github.io/centro-estetico-lia/","image":"https://rotenzark.github.io/centro-estetico-lia/img/og.jpg","telephone":"+39 02 805 2901","address":{"@type":"PostalAddress","streetAddress":"Via Morigi 1","postalCode":"20123","addressLocality":"Milano","addressRegion":"MI","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":45.4622678,"longitude":9.1812846},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"10:00","closes":"18:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"98","bestRating":"5"},"sameAs":["https://www.treatwell.it/salone/centro-estetico-lia/","https://www.instagram.com/centroesteticolia/"]}
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Centro Estetico Lia",
+  "description": "Centro estetico e del benessere dal 1972 nel cuore di Sant'Ambrogio: percorsi su misura per viso e corpo, massaggi, riflessologia plantare, epilazione a cera, manicure e pedicure.",
+  "url": "https://rotenzark.github.io/centro-estetico-lia/",
+  "image": "https://rotenzark.github.io/centro-estetico-lia/img/og.jpg",
+  "telephone": "+39 02 805 2901",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Morigi 1",
+    "postalCode": "20123",
+    "addressLocality": "Milano",
+    "addressRegion": "MI",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.4622678,
+    "longitude": 9.1812846
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "10:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Saturday"
+      ],
+      "opens": "10:00",
+      "closes": "18:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.treatwell.it/salone/centro-estetico-lia/",
+    "https://www.instagram.com/centroesteticolia/"
+  ]
+}
 </script>
 </head>
 <body>
@@ -81,7 +127,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
       <p class="apertura__frase" data-i18n="h.testo">Un piccolo centro estetico e del benessere, in Via Morigi dal 1972: viso, corpo, massaggi e riflessologia, su appuntamento.</p>
       <p class="voto"><b class="voto__n">5,0</b> <span class="voto__su" data-i18n="h.voto">su Treatwell, 98 recensioni</span></p>
       <blockquote class="citazione">
-        <p>«Il mio punto di riferimento ormai da anni, professionali, accoglienti, sempre una gioia!»</p>
+        <p lang="it">«Il mio punto di riferimento ormai da anni, professionali, accoglienti, sempre una gioia!»</p>
         <footer data-i18n="h.chi">Giulia, in una recensione su Treatwell</footer>
       </blockquote>
       <p class="stato" id="orarioStato">Dal lunedì al sabato, su appuntamento</p>
@@ -211,11 +257,11 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <h2 id="diconoT" class="capitolo__titolo" data-i18n="d.titolo">Chi viene da noi</h2>
     <p class="voto voto--sezione"><b class="voto__n">5,0</b> <span class="voto__su" data-i18n="d.voto">su Treatwell, 98 recensioni</span></p>
     <ul class="recensioni">
-      <li class="recensione reveal"><p class="recensione__testo">«Secondo me il miglior trattamento viso di Milano, per attenzione al cliente, cura e gentilezza.»</p><p class="recensione__chi"><b>Nicoletta</b> <span data-i18n="d.t25">Treatwell, 2025</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«È un luogo pulito con professioniste di altissimo livello e ci si sente accolti e avvolti da una atmosfera davvero speciale unica in Milano che infonde pace fiducia e calma.»</p><p class="recensione__chi"><b>Anna</b> <span data-i18n="d.t24">Treatwell, 2024</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Lia è sempre molto cortese, ed attenta ai tuoi bisogni, ancora prima che tu gliene parli. Dopo il massaggio sono rinata.»</p><p class="recensione__chi"><b>Stefania</b> <span data-i18n="d.t22">Treatwell, 2022</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Era la prima volta che andavo al centro estetico e non posso che dire che è stato davvero rilassante. Posto piccolo e pulito, dove il personale è molto cortese, attento e super professionale. La ceretta è stata la meno dolorosa negli ultimi 10 anni!»</p><p class="recensione__chi"><b>roberta</b> <span data-i18n="d.t24">Treatwell, 2024</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Fabiana ha una mano molto delicata e la ceretta è venuta benissimo. Bravissima!»</p><p class="recensione__chi"><b>Priscilla</b> <span data-i18n="d.t26">Treatwell, 2026</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Secondo me il miglior trattamento viso di Milano, per attenzione al cliente, cura e gentilezza.»</p><p class="recensione__chi"><b>Nicoletta</b> <span data-i18n="d.t25">Treatwell, 2025</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«È un luogo pulito con professioniste di altissimo livello e ci si sente accolti e avvolti da una atmosfera davvero speciale unica in Milano che infonde pace fiducia e calma.»</p><p class="recensione__chi"><b>Anna</b> <span data-i18n="d.t24">Treatwell, 2024</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Lia è sempre molto cortese, ed attenta ai tuoi bisogni, ancora prima che tu gliene parli. Dopo il massaggio sono rinata.»</p><p class="recensione__chi"><b>Stefania</b> <span data-i18n="d.t22">Treatwell, 2022</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Era la prima volta che andavo al centro estetico e non posso che dire che è stato davvero rilassante. Posto piccolo e pulito, dove il personale è molto cortese, attento e super professionale. La ceretta è stata la meno dolorosa negli ultimi 10 anni!»</p><p class="recensione__chi"><b>roberta</b> <span data-i18n="d.t24">Treatwell, 2024</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Fabiana ha una mano molto delicata e la ceretta è venuta benissimo. Bravissima!»</p><p class="recensione__chi"><b>Priscilla</b> <span data-i18n="d.t26">Treatwell, 2026</span></p></li>
       <li class="recensione reveal"><p class="recensione__testo">«Una piccola oasi speciale dove ti senti coccolata! Staff estremamente preparato e prodotti eccezionali. Ambiente curato in ogni dettaglio dove puoi rilassarti nelle mani giuste!»</p><p class="recensione__chi"><b>Xelenia</b> <span data-i18n="d.t18">Treatwell, 2018</span></p></li>
     </ul>
     <p class="dicono__nota"><span data-i18n="d.nota">Dalle recensioni su Treatwell, come sono state scritte. La frase in alto è di un'altra cliente, sempre su Treatwell.</span> <a href="https://www.treatwell.it/salone/centro-estetico-lia/" target="_blank" rel="noopener" data-i18n="d.tutte">Tutte le recensioni su Treatwell</a></p>
@@ -250,7 +296,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
       </div>
     </div>
     <div class="cartina reveal">
-      <iframe title="Mappa: Centro Estetico Lia, Via Morigi 1, Milano" data-i18n-title="w.mappa" src="https://maps.google.com/maps?q=Centro%20Estetico%20Lia%2C%20Via%20Morigi%201%2C%2020123%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="mappa-clic" data-mappa-clic style="--mappa-h: 400px"><template><iframe title="Mappa: Centro Estetico Lia, Via Morigi 1, Milano" data-i18n-title="w.mappa" src="https://maps.google.com/maps?q=Centro%20Estetico%20Lia%2C%20Via%20Morigi%201%2C%2020123%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Centro+Estetico+Lia%2C+Via+Morigi+1%2C+20123+Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
     </div>
   </section>
 
@@ -263,7 +309,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <p class="piede__dove">Via Morigi 1, 20123 Milano · <a href="tel:+39028052901" class="intero">02 805 2901</a></p>
     <p class="piede__orario" data-i18n="f2.orario">Dal lunedì al venerdì 10–19 · sabato 10–18 · su appuntamento</p>
     <p class="piede__social"><a href="https://www.treatwell.it/salone/centro-estetico-lia/" target="_blank" rel="noopener">Treatwell</a> · <a href="https://www.instagram.com/centroesteticolia/" target="_blank" rel="noopener">Instagram</a></p>
-    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · orari dalla loro porta e dalla scheda Google, voto e recensioni da Treatwell (settembre 2026); le foto da Treatwell e il vecchio logo dalla scheda Google. Il ramo l'abbiamo disegnato noi, dai rametti della loro vetrina.</p>
+    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · <a href="privacy.html">Privacy</a> · orari dalla loro porta e dalla scheda Google, voto e recensioni da Treatwell (settembre 2026); le foto da Treatwell e il vecchio logo dalla scheda Google. Il ramo l'abbiamo disegnato noi, dai rametti della loro vetrina.</p>
     <p><a class="piede__su" href="#inizio"><span data-i18n="f2.su">Torna su</span> <span class="freccia" aria-hidden="true">↑</span></a></p>
   </div>
 </footer>
@@ -278,5 +324,6 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
   <img id="lightboxImg" src="" alt="">
 </div>
 
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
